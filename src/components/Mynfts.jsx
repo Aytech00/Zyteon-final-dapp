@@ -62,8 +62,8 @@ const Mynfts = () => {
           <div className="text-center my-5">
             <button
               className="shadow-xl shadow-black text-white
-            bg-[#e32970] hover:bg-[]
-            rounded-full cursor-pointer p-2"
+            bg-[#fff] hover:bg-[]
+            rounded-full cursor-pointer p-3"
               onClick={() => setEnd(end + count)}
             >
               Load More
@@ -95,11 +95,10 @@ const Card = ({ nft }) => {
           <small className="text-xs">Current Price</small>
           <p className="text-sm font-semibold">{nft.cost} ETH</p>
         </div>
-        <Link to='/Art'   onClick={setNFT} className="mx-4 cursor-pointer">
+        <Link to='/Art' onClick={setNFT} className="mx-4 cursor-pointer">
         <button
           className="shadow-sm shadow-black text-white text-sm bg-[#8359ff]
             hover:bg-[#7862ba] cursor-pointer rounded-full px-3 py-3"
-         
         >
           View Details
         </button>

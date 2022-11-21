@@ -36,7 +36,7 @@ const ShowNFT = () => {
           justify-center bg-black bg-opacity-50 transform
           transition-transform duration-300 ${showModal}`}
     >
-      <div className="bg-[#151c25] shadow-xl shadow-[#e32970] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
+      <div className="bg-[#8359ff] shadow-xl rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between items-center">
             <p className="font-semibold text-gray-400">Buy NFT</p>
@@ -45,7 +45,7 @@ const ShowNFT = () => {
               onClick={() => setGlobalState('showModal', 'scale-0')}
               className="border-0 bg-transparent focus:outline-none"
             >
-              <FaTimes className="text-gray-400" />
+              <FaTimes className="text-black-400" />
             </button>
           </div>
 
@@ -61,7 +61,7 @@ const ShowNFT = () => {
 
           <div className="flex flex-col justify-start rounded-xl mt-5">
             <h4 className="text-white font-semibold">{nft?.title}</h4>
-            <p className="text-gray-400 text-xs my-1">{nft?.description}</p>
+            <p className="text-white text-xs my-1">{nft?.description}</p>
 
             <div className="flex justify-between items-center mt-3 text-white">
               <div className="flex justify-start items-center">
@@ -88,9 +88,9 @@ const ShowNFT = () => {
             {connectedAccount == nft?.owner ? (
               <button
                 className="flex flex-row justify-center items-center
-                w-full text-[#e32970] text-md border-[#e32970]
+                w-full text-white text-md 
                 py-2 px-5 rounded-full bg-transparent 
-                drop-shadow-xl border hover:bg-[#bd255f]
+                drop-shadow-xl border hover:bg-[#8359ff]
                 hover:bg-transparent hover:text-white
                 hover:border hover:border-[#bd255f]
                 focus:outline-none focus:ring mt-5"
@@ -101,7 +101,7 @@ const ShowNFT = () => {
             ) : (
               <button
                 className="flex flex-row justify-center items-center
-                w-full text-white text-md bg-[#e32970]
+                w-full text-white text-md bg-[#8359ff]
                 hover:bg-[#bd255f] py-2 px-5 rounded-full
                 drop-shadow-xl border border-transparent
                 hover:bg-transparent hover:text-[#e32970]

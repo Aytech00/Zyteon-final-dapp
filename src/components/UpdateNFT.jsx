@@ -39,16 +39,16 @@ const UpdateNFT = () => {
       justify-center bg-black bg-opacity-50 transform
       transition-transform duration-300 ${modal}`}
     >
-      <div className="bg-[#151c25] shadow-xl shadow-[#e32970] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
+      <div className="bg-[#8359ff] shadow-xl shadow-[#fff] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
         <form className="flex flex-col">
           <div className="flex flex-row justify-between items-center">
-            <p className="font-semibold text-gray-400">{nft?.title}</p>
+            <p className="font-semibold text-white">{nft?.title}</p>
             <button
               type="button"
               onClick={() => setGlobalState('updateModal', 'scale-0')}
               className="border-0 bg-transparent focus:outline-none"
             >
-              <FaTimes className="text-gray-400" />
+              <FaTimes className="text-black" />
             </button>
           </div>
 
@@ -62,7 +62,7 @@ const UpdateNFT = () => {
             </div>
           </div>
 
-          <div className="flex flex-row justify-between items-center bg-gray-800 rounded-xl mt-5">
+          <div className="flex flex-row justify-between items-center bg-[#fff] rounded-xl mt-5">
             <input
               className="block w-full text-sm
               text-slate-500 bg-transparent border-0
@@ -81,11 +81,11 @@ const UpdateNFT = () => {
             type="submit"
             onClick={handleSubmit}
             className="flex flex-row justify-center items-center
-            w-full text-white text-md bg-[#e32970]
-            hover:bg-[#bd255f] py-2 px-5 rounded-full
+            w-full text-black text-md bg-[#fff]
+            hover:bg-[#ebdde9] py-2 px-5 rounded-full
             drop-shadow-xl border border-transparent
-            hover:bg-transparent hover:text-[#e32970]
-            hover:border hover:border-[#bd255f]
+            hover:bg-transparent
+            hover:border hover:border-[#ebdde9]
             focus:outline-none focus:ring mt-5"
           >
             Update Now
