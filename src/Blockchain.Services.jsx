@@ -99,8 +99,9 @@ const mintNFT = async ({ title, description, metadataURI, price }) => {
     await contract.methods
       .payToMint(title, description, metadataURI, price)
       .send({ from: account, value: mintPrice })
-
+  
     return true
+   
   } catch (error) {
     reportError(error)
   }
