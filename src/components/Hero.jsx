@@ -5,7 +5,7 @@ import zyteonbanner from '../assets/team.jpg'
 const Hero = () => {
   const [connectedAccount] = useGlobalState('connectedAccount')
   const onCreatedNFT = () => {
-    setGlobalState('modal', 'scale-100')
+    
   }
 
   return (
@@ -14,12 +14,12 @@ const Hero = () => {
       items-center mx-auto py-10"
     >
       <div className="md:w-3/6 w-full">
-        <div>
+        <div className='hero-text'>
           <h1 className="text-black text-5xl font-bold ">
             Buy and Sell <br /> Digital Arts, <br />
             <span className="text-black ">NFTs</span> Collections
           </h1>
-          <p className="text-black font-semibold text-sm mt-3">
+          <p className="text-black text-sm mt-3">
             Mint and collect the hottest NFTs around.
           </p>
         </div>

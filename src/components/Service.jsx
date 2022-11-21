@@ -17,7 +17,7 @@ const Service = () => {
             <img src={img1} className={style.img} alt="" />
           </div>
           <div>
-            <h2 className={style.title}> 1. Connect wallet
+            <h2 className={style.title}> Connect wallet
            </h2>
           </div>
 
@@ -31,7 +31,7 @@ const Service = () => {
           <div className={style.img_wrap}>
             <img src={img2} className={style.img} alt="" />
           </div>
-          <h2 className={style.title}>2. Mint your NFTs
+          <h2 className={style.title}> Mint your NFTs
 </h2>
           <div className={style.text}>
             <p>
@@ -44,7 +44,7 @@ const Service = () => {
           <div className={style.img_wrap}>
             <img src={img3} className={style.img} alt="" />
           </div>
-          <h2 className={style.title}>3. List Them For Sale
+          <h2 className={style.title}>List Them For Sale
           </h2>
 
           <div className={style.text}>
