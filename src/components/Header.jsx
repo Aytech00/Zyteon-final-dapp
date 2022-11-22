@@ -57,7 +57,7 @@ const Header = () => {
         <button
           className=" shadow-black text-white
         bg-[#8359ff] hover:bg-[#7862ba] md:text-xs p-3
-          rounded-full cursor-pointer"
+          rounded-full cursor-pointer mobile-adress-btn"
           onClick={connectWallet}
         >
           Connect Wallet

@@ -48,7 +48,7 @@ const SideBar = () => {
         <button
           className="shadow-black text-white
         bg-[#8359ff] hover:bg-[#7862ba] md:text-xs p-3
-          rounded-full cursor-pointer mobile-adress-btn"
+          rounded-full cursor-pointer "
         >
           {truncate(connectedAccount, 4, 4, 11)}
         </button>
@@ -59,7 +59,7 @@ const SideBar = () => {
          cursor-pointer"
           onClick={connectWallet}
         >
-          Connect Wallet
+          Connect
         </button>
       )}
 
