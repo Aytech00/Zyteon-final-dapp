@@ -70,7 +70,7 @@
 }
 
 
-button{
+.btn{
     background-color: #7ca1ff;
 
     color: white;
@@ -81,7 +81,7 @@ button{
     
 }
 
-button:hover{
+btn:hover{
     background-color:  #ff93e8;
     transition: all 250ms ease-in-out;
 }

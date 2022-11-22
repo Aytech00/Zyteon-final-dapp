@@ -1,6 +1,7 @@
 import Identicon from 'react-identicons'
 import { setGlobalState, useGlobalState, truncate } from '../store'
 import zyteonbanner from '../assets/team.jpg'
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [connectedAccount] = useGlobalState('connectedAccount')
@@ -31,7 +32,9 @@ const Hero = () => {
             rounded-full cursor-pointer px-6 py-3"
             onClick={onCreatedNFT}
           >
-            Create
+             <Link to="/CreatePage" >
+          Create
+        </Link>
           </button>
         </div>
 
