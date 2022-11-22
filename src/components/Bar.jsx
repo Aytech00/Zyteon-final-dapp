@@ -46,8 +46,8 @@ const SideBar = () => {
 
         {connectedAccount ? (
         <button
-          className=" shadow-black text-white
-        bg-[#8359ff] hover:bg-[#7862ba] md:text-xs p-4
+          className="shadow-black text-white
+        bg-[#8359ff] hover:bg-[#7862ba] md:text-xs p-3
           rounded-full cursor-pointer mobile-adress-btn"
         >
           {truncate(connectedAccount, 4, 4, 11)}
@@ -55,8 +55,8 @@ const SideBar = () => {
       ) : (
         <button
           className=" shadow-black text-white
-        bg-[#8359ff] hover:bg-[#7862ba] md:text-xs p-2
-          rounded-full cursor-pointer"
+        bg-[#8359ff] hover:bg-[#7862ba] md:text-xs p-3 mt-3 rounded-full
+         cursor-pointer"
           onClick={connectWallet}
         >
           Connect Wallet

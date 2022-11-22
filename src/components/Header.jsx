@@ -45,7 +45,24 @@ const Header = () => {
         </Link>
       </ul>
 
-     
+      {connectedAccount ? (
+        <button
+          className=" shadow-black text-white
+        bg-[#8359ff] hover:bg-[#7862ba] md:text-xs p-4
+          rounded-full cursor-pointer mobile-adress-btn"
+        >
+          {truncate(connectedAccount, 4, 4, 11)}
+        </button>
+      ) : (
+        <button
+          className=" shadow-black text-white
+        bg-[#8359ff] hover:bg-[#7862ba] md:text-xs p-3
+          rounded-full cursor-pointer"
+          onClick={connectWallet}
+        >
+          Connect Wallet
+        </button>
+      )}
       <div className="flex justify-start items-center p-3">
         <button
           className="bg-transparent  hover:bg-transparent"

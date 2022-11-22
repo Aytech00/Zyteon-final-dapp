@@ -152,7 +152,7 @@ const ArtPageComponent = () => {
             {connectedAccount == nft?.owner ? (
               <button className={style.btn} onClick={onChangePrice}>Change price</button>
             ) : (
-              <button onClick={handleNFTPurchase}>Buy now</button>
+              <button className={style.btn} onClick={handleNFTPurchase}>Buy now</button>
             )}
           </div>
         </div>

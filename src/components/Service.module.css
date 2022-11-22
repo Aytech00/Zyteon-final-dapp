@@ -8,12 +8,14 @@
 .heading_wrap{
     text-align: center;
     margin-bottom: 5%;
+    
 }
 
 
 .heading_text{
     font-size: 35px;
     font-weight: 900;
+    padding: 0% 4%;
 }
 
 .main_wrap{
@@ -64,5 +66,11 @@
     .inner_wrap{
         margin-bottom: 3em;
     }
+
+    .service_main_wrap{
+        padding: 9% 2%;
+
+    }
     
+
 }

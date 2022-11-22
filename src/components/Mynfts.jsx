@@ -4,6 +4,11 @@ import { setGlobalState, useGlobalState } from '../store'
 import { Link } from 'react-router-dom';
 
 const Mynfts = () => {
+  useEffect(async () => {
+    await isWallectConnected();
+    await getAllNFTs();
+  }, []);
+
   const [nfts] = useGlobalState('nfts')
   const [end, setEnd] = useState(4)
   const [count] = useState(4)
@@ -61,8 +66,8 @@ const Mynfts = () => {
         {collection.length > 0 && nfts.length > collection.length ? (
           <div className="text-center my-5">
             <button
-              className="shadow-xl shadow-black text-white
-            bg-[#fff] hover:bg-[]
+              className="shadow-sm  text-white
+            bg-[#8359ff] hover:bg-[]
             rounded-full cursor-pointer p-3"
               onClick={() => setEnd(end + count)}
             >
